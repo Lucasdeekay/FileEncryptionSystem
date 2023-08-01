@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{% load static %}
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <!-- Page Title Here -->
+        <title>File Encryption System</title>
+		
+        <!-- Page Description Here -->
+		<meta name="description" content="A responsive coming soon template, un template HTML pour une page en cours de construction">
+
+        <!-- Disable screen scaling-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+        <!-- Initializer -->
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        
+        <!-- Web fonts and Web Icons -->
+        <link rel="stylesheet" href="{% static 'css/pageloader.css' %}">
+        <link rel="stylesheet" href="{% static 'fonts/opensans/stylesheet.css' %}">
+        <link rel="stylesheet" href="{% static 'fonts/asap/stylesheet.css' %}">
+        <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+        
+        <!-- Vendor CSS style -->
+        <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}">
+        <link rel="stylesheet" href="{% static 'js/vendor/jquery.fullPage.css' %}">
+        <link rel="stylesheet" href="{% static 'js/vegas/vegas.min.css' %}">
+        
+		<!-- Main CSS files -->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main_responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style-color1.css' %}">
+        
+        <script src="{% static 'js/vendor/modernizr-2.7.1.min.js' %}"></script>
+    </head>
+    <body id="menu" class="alt-bg">
+        
+        <!-- Page Loader -->
+        <div class="page-loader" id="page-loader">
+            <div><i class="ion ion-loading-d"></i><p>loading</p></div>
+        </div>
+        
+        <!-- BEGIN OF site header Menu -->
+		<!-- Add "material" class for a material design style -->
+		<header class="header-top">
+			
+            <div class="menu clearfix">
+                <a href="#encrypt">Encrypt</a>
+                <a href="#decrypt">Decrypt</a>
+            </div>
+		</header>
+        <!-- END OF site header Menu-->
+        
+        <!-- BEGIN OF Quick nav icons at left -->
+		<nav class="quick-link count-4 nav-left">
+			<div class="logo">
+				<a href="#home">
+					<img src="{% static 'img/logo.png' %}" alt="Logo Brand">
+				</a>
+			</div>
+			<ul id="qmenu" class="qmenu">
+				<li data-menuanchor="home">
+					<a href="#home" class=""><i class="icon ion ion-home"></i>
+					</a>
+					<span class="title">Home page</span>
+				</li>
+				<li data-menuanchor="register">
+					<a href="#encrypt"><i class="icon ion ion-compose"></i>
+					</a>
+					<span class="title">Encrypt</span>
+				</li>
+				<li data-menuanchor="decrypt">
+					<a href="#decrypt"><i class="icon ion ion-android-folder"></i>
+					</a>
+					<span class="title">Decrypt</span>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="#contact"><i class="icon ion ion-email"></i>
+					</a>
+					<span class="title">Contact</span>
+				</li>
+			</ul>
+		</nav>
+        <!-- END OF Quick nav icons at left -->
+        
+
+
+        <!-- BEGIN OF site cover -->
+        <div class="page-cover" id="s-cover">
+            <!-- Cover Background -->
+            <div class="cover-bg pos-abs full-size bg-img" data-image-src="{% static 'img/bg-default.jpg' %}"></div>
+			
+            <!-- BEGIN OF Slideshow Background -->
+            <div class="cover-bg pos-abs full-size slide-show">
+				<i class='img' data-src="{% static 'img/bg-slide1.jpeg' %}"></i>
+				<i class='img' data-src="{% static 'img/bg-slide2.jpg' %}"></i>
+				<i class='img' data-src="{% static 'img/bg-slide3.jpg' %}"></i>
+				<i class='img' data-src="{% static 'img/bg-slide4.jpg' %}"></i>
+			</div>
+            <!-- END OF Slideshow Background -->
+			
+			<!-- Solid color as filter -->
+            <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(0, 0, 0, 0.41)"></div>
+            
+        </div>
+        <!--END OF site Cover -->
+		
+		<!-- Begin of timer pane -->
+		<div class="pane-when " id="s-when">
+			<div class="content">
+				<!-- Clock -->
+				<div class="clock clock-countdown">
+					<div class="site-config"
+						 data-date="01/01/2024 00:00:00"
+						 data-date-timezone="+0"
+						 ></div>
+					<div class="elem-center">
+						<div class="logo">
+							<a href="#">
+								<img src="{% static 'img/logo.png' %}">
+							</a>
+						</div>
+					</div>
+
+					<div class="elem-bottom">
+						<div class="deco"></div>
+						<p>Raising <strong>generational leaders</strong></p>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<!-- End of timer pane -->
+        
+        <!-- BEGIN OF site main content content here -->
+        <main class="page-main" id="mainpage">             
+            
+			<!-- Begin of home page -->
+			<div class="section page-home page page-cent" id="s-home">
+
+				<section class="content">
+					
+					<header class="header">
+						<div class="h-left">
+							<h2>Dominion <strong>University</strong></h2>
+						</div>
+						<div class="h-right">
+							<h3>File <br>Encryption System</h3>
+							<h4 class="subhead"><a href="#register">Encrypt your file here</a></h4>
+						</div>
+					</header>
+				</section>
+				
+				<!-- Scroll down button -->
+                <footer class="p-footer p-scrolldown">
+                    <a href="#encrypt">
+                        <div class="arrow-d">
+							<div class="before">Scroll</div>
+							<div class="after">Down</div>
+							<div class="circle"><i class="ion ion-mouse"></i></div>
+						</div>
+                    </a>                        
+                </footer>
+			</div>
+			<!-- End of home page -->
+            
+            <!-- Begin of register page -->
+            <div class="section page-register page page-cent"  id="s-register">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>File Encryption <i class="ion ion-compose"></i></h3>
+						<h4 class="subhead">Encrypt your file in no time</h4>
+                    </header>
+                    <div>
+                        <form class="form magic send_email_form" method="post" action="" enctype="multipart/form-data">
+							{% csrf_token %}
+                            <p class="invite">Please, upload your file to encrypt :</p>
+							<div class="fields clearfix">
+								<div class="input">
+									<label for="file">File </label>
+									<input class="email_f" id="file" name="file" type="file" required data-validation-type="file">
+								</div>
+								<div class="buttons">
+									<button type="submit" class="button email_b" name="submit_email">Ok</button>
+								</div>
+							</div>
+                            
+                            <p class="email-ok invisible"><strong>Thank you</strong> for using our service.</p>
+                        </form>
+                    </div>
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#decrypt">
+                        <div class="arrow-d">
+							<div class="before">Scroll</div>
+							<div class="after">Down</div>
+							<div class="circle"><i class="ion ion-mouse"></i></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of register page -->
+            
+            <!-- Begin of decrypt page -->
+            <div class="section page-about page page-cent" id="s-about-us">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>File Decryption <i class="ion ion-compose"></i></h3>
+						<h4 class="subhead">Decrypt your file in no time</h4>
+                    </header>
+                    <div>
+                        <form class="form magic send_email_form" method="post" action="{% url 'Encryption:decrypt' %}" enctype="multipart/form-data">
+							{% csrf_token %}
+                            <p class="invite">Please, upload your file to decrypt :</p>
+							<div class="fields clearfix">
+								<div class="input">
+									<label for="dec-file">File </label>
+									<input class="email_f" id="dec-file" name="file" type="file" required data-validation-type="file">
+								</div>
+								<div class="buttons">
+									<button type="submit" class="button email_b" name="submit_email">Ok</button>
+								</div>
+							</div>
+
+                            <p class="email-ok invisible"><strong>Thank you</strong> for using our service.</p>
+                        </form>
+                    </div>
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#contact">
+                        <div class="arrow-d">
+							<div class="before">Scroll</div>
+							<div class="after">Down</div>
+							<div class="circle"><i class="ion ion-mouse"></i></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of about us page -->
+                
+            <!-- Begin of Contact page   -->
+            <div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact">
+				<!-- Begin of contact information -->
+				<div class="slide" id="s-information" data-anchor="information">
+					<section class="content">
+						<header class="p-title">
+							<h3>Contact<i class="ion ion-location">
+								</i>
+							</h3>
+							<ul class="buttons">
+								<li class="show-for-medium-up">
+									<a title="Decrypt" href="#decrypt" ><i class="ion ion-android-information"></i></a>
+								</li>
+								<li>
+									<a title="Message" href="#contact"><i class="ion ion-email"></i></a>
+								</li>
+							</ul>
+						</header>
+						<!-- Begin Of Page SubSction -->
+						<div class="contact">
+							<div class="row">
+								<div class="medium-6 columns left">
+									<ul>
+										<li>
+											<h4>Email</h4>
+											<p><a href="mailto://info@dominionuniversity.edu.ng">info@dominionuniversity.edu.ng</a></p>
+										</li>
+										<li>
+											<h4>Address</h4>
+											<p>KM 24, Ibadan-Lagos Expressway, Ibadan, Oyo State
+											<br>Nigeria.</p>
+										</li>
+										<li>
+											<h4>Phone</h4>
+											<p>+234 902 4563 447
+											<br>+234 906 0005 217</p>
+										</li>
+									</ul>
+								</div>
+								<div class="medium-6 columns social-links right">
+									<ul>
+
+										<!-- legal notice -->
+										<li class="show-for-medium-up">
+											<h4>Website</h4>
+											<p><a href="https://www.dominionuniversity.edu.ng/">www.dominionuniversity.edu.ng</a></p>
+										</li>
+										<li  class="show-for-medium-up">
+											<h4>Find us on</h4>
+											<!-- Begin of Social links -->
+											<div class="socialnet">
+												<a href="#"><i class="ion ion-social-facebook"></i></a>
+												<a href="#"><i class="ion ion-social-instagram"></i></a>
+												<a href="#"><i class="ion ion-social-twitter"></i></a>
+											</div>
+											<!-- End of Social links -->
+										</li>
+										<li>
+											<p><img src="{% static 'img/logo.png' %}" alt="Logo" class="logo"></p>
+											<p class="small">All right reserved 2023</p>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<!-- End of page SubSection -->
+					</section>
+				</div>
+				<footer class="p-footer p-scrolldown">
+                    <a href="#home">
+                        <div class="arrow-d">
+							<div class="before">Scroll</div>
+							<div class="after">Down</div>
+							<div class="circle"><i class="ion ion-mouse"></i></div>
+						</div>
+                    </a>
+                </footer>
+				<!-- end of contact information -->
+            </div>
+            <!-- End of Contact page  -->   
+        
+        </main>
+
+        <!-- END OF site main content content here -->
+
+        <!-- All Javascript plugins goes here -->
+        <script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}"></script>
+		<!-- All vendor scripts -->
+        <script src="{% static 'js/vendor/all.js' %}"></script>
+
+		<!-- Downcount JS -->
+        <script src="{% static 'js/jquery.downCount.js' %}"></script>
+        
+		<!-- Javascript main files -->
+        <script src="{% static 'js/main.js' %}"></script>
+
+    </body>
+</html>

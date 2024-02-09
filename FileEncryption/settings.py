@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,14 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-wy8%j!*$!k&wsk2*(k)jw^8f(po$+ldsx45m!2%qke$k#jbpeg'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
 
-ALLOWED_HOSTS = ["*"]
-
+DEBUG =config('DEBUG', default=False, cast=bool)
+SECRET_KEY = config('SECRET_KEY')
 
 # Application definition
 

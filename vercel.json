@@ -23,5 +23,6 @@
       "src": "/(.*)",
       "dest": "FileEncryption/wsgi.py"
     }
-  ]
+  ],
+  "outputDirectory": "staticfiles"
 }

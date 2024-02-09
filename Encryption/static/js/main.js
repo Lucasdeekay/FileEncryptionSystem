@@ -136,7 +136,7 @@ $(document).ready(function() {
 	/** Init fullpage.js */
     $('#mainpage').fullpage({
 		menu: '#qmenu',
-		anchors: ['home',  'register', 'about-us', 'contact'],
+		anchors: ['home',  'encrypt', 'decrypt', 'contact'],
 //        verticalCentered: false,
 //        resize : false,
 //		responsive: 900,

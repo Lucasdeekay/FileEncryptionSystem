@@ -16,13 +16,8 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "FileEncryption/wsgi.py"
     }
-  ],
-  "outputDirectory": "staticfiles"
+  ]
 }
